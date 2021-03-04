@@ -1,0 +1,19 @@
+<h1>Mensagens</h1>
+<form action="/altera" method="GET">
+    <table>
+        <tr>
+            <th>Índice</th>
+            <th>Produto</th>
+            <th>Alterar</th>
+        </tr>
+        {{#each msg}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{this}}</td>
+            <td><a href="/altera/{{@index}}">
+                    <imgsrc="img /alterar.png">
+                </a></td>
+        </tr>
+        {{/each}}
+    </table>
+</form>

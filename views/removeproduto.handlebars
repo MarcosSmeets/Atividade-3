@@ -1,0 +1,20 @@
+<h1>Produtos</h1>
+<form action="/remove" method="GET">
+    <table>
+        <tr>
+            <th>Índice</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preco</th>
+            <th>Apagar</th>
+            {{#each msg}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{this.descricao}}</td>
+            <td>{{this.quantidade}}</td>
+            <td>{{this.preco}}</td>
+            <td><button><a href="/remove"></a>Remover</button></td>
+        </tr>
+        {{/each}}
+    </table>
+</form>
